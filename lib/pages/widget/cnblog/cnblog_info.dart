@@ -94,7 +94,8 @@ class _CnblogInfoState extends State<CnblogInfo> {
       case (2):
         return InkWell(
             onTap: () {
-              RouteTool.toWebView(context, "关于", "https://");
+	            RouteTool.toWebView(context, "关于",
+		            "https://github.com/xiaohuiduan/flutter_blog/blob/master/README.md");
             },
             child: Container(
                 padding: EdgeInsets.fromLTRB(16, 16, 16, 8),
