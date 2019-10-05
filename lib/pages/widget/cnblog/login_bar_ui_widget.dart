@@ -33,7 +33,10 @@ class _NotLoginWidgetState extends State<NotLoginWidget> {
               child: Row(
                 children: <Widget>[
                   CircleAvatar(
-                      radius: 40.0, backgroundImage: AssetImage("image/1.jpg")),
+	                  radius: 40.0,
+	                  backgroundImage: NetworkImage(
+		                  "https://github.com/fluidicon.png"),
+                  ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[

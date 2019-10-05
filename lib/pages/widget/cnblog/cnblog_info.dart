@@ -6,6 +6,7 @@ import 'package:flutter_blog/static_msg/StaticMsg.dart';
 import 'package:flutter_blog/tool/route_tool.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'about_me.dart';
 import 'cnblog_netroute_tool.dart';
 import 'cnblog_site_home.dart';
 
@@ -94,8 +95,10 @@ class _CnblogInfoState extends State<CnblogInfo> {
       case (2):
         return InkWell(
             onTap: () {
-	            RouteTool.toWebView(context, "关于",
-		            "https://github.com/xiaohuiduan/flutter_blog/blob/master/README.md");
+	            Navigator.push(
+		            context,
+		            new MaterialPageRoute(
+			            builder: (context) => new AboutMePage()));
             },
             child: Container(
                 padding: EdgeInsets.fromLTRB(16, 16, 16, 8),

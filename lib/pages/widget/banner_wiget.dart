@@ -10,31 +10,12 @@ class BannerWidgetUI extends StatefulWidget {
 class _BannerWidgetUIState extends State<BannerWidgetUI> {
   @override
   Widget build(BuildContext context) {
-    return Swiper(
-      itemCount: 34,
-      itemBuilder: (BuildContext context, int index) {
-        return InkWell(
-          onTap: () {},
-          child: new Container(
-            child: new Image.asset(
-              "image/$index.jpg",
-              fit: BoxFit.fill,
-            ),
-          ),
-        );
-      },
+	  return Container(
+		  child: new Image.network(
+			  "https://api.xygeng.cn/bing/1366.php",
+			  fit: BoxFit.fill,
+		  ),
     );
   }
 }
 
-class CnblogAppBar extends StatefulWidget {
-  @override
-  _CnblogAppBarState createState() => _CnblogAppBarState();
-}
-
-class _CnblogAppBarState extends State<CnblogAppBar> {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
