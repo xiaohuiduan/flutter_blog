@@ -16,7 +16,7 @@
     <application
         android:usesCleartextTraffic="true"
         android:name="io.flutter.app.FlutterApplication"
-        android:label="flutter_blog"
+        android:label="flutter博客"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
