@@ -19,7 +19,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  dio:  ^3.0.0
+  dio: ">=3.0.0 <6.0.0"
   flutter_webview_plugin: ^0.3.8
   flutter_swiper: ^1.1.6
   path_provider: ^0.5.0+1
